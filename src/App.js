@@ -16,6 +16,7 @@ class App extends Component {
       answerOptions: [],
       answer: '',
       answersCount: {},
+      answers: [],
       result: ''
     };
 
@@ -91,15 +92,20 @@ class App extends Component {
     const answersCountValues = answersCountKeys.map(key => answersCount[key]);
     const maxAnswerCount = Math.max.apply(null, answersCountValues);
 
-    return answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
+    const result = answersCountKeys.filter(key => answersCount[key] === maxAnswerCount);
+
+    var answers = new Map();
+
+    for(let i = 0; i < answersCountValues.length; i++){
+      answers.set(`  ${answersCountKeys[i]}: `, `${Math.round((answersCountValues[i]/11)*100)}%  `);
+    }
+    console.log('init', answers)
+    return { result, answers };
   }
 
   setResults(result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
-    } else {
-      this.setState({ result: 'Undetermined' });
-    }
+    console.log('result.answers', result.answers);
+    this.setState({ result: result.result, answers: result.answers });
   }
 
   renderQuiz() {
@@ -116,7 +122,9 @@ class App extends Component {
   }
 
   renderResult() {
-    return <Result quizResult={this.state.result} />;
+    console.log('state answers', this.state.answers);
+    console.log('state result', this.state.result);
+    return <Result quizResult={this.state.result} answers={this.state.answers} />;
   }
 
   render() {
