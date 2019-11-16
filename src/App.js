@@ -123,7 +123,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>Something here</h1>
+          <h1>Per Scholas Admissions Quiz</h1>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
