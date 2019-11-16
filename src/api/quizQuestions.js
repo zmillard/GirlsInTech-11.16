@@ -1,87 +1,96 @@
 var quizQuestions = [
   {
-      question: "What franchise would you rather play a game from?",
+      question: "Have you worked with or studied any of the following languages yourself?",
       answers: [
           {
-              type: "Microsoft",
-              content: "Halo"
+              type: "SWE",
+              content: "HTML or Javascript"
           },
           {
-              type: "Nintendo",
-              content: "Pokemon"
+              type: "Cloud", 
+              content: "Bash/Linux/Unix"
           },
           {
-              type: "Sony",
-              content: "Uncharted"
-          }
+              type: "CySec",
+              content: "SQL"
+          },
+          {
+            type: "Other",
+            content: "none"
+        }
       ]
   },
   {
-      question: "Which console would you prefer to play with friends?",
+      question: "Are you excited about creating any of the following on your own?",
       answers: [
           {
-              type: "Microsoft",
-              content: "X-Box"
+              type: "SWE",
+              content: "a website"
           },
           {
-              type: "Nintendo",
-              content: "Nintendo 64"
+              type: "Cloud",
+              content: "a wifi network"
           },
           {
-              type: "Sony",
-              content: "Playstation 1"
-          }
+              type: "CySec",
+              content: "a firewall"
+          },
+          {
+            type: "Other",
+            content: "no"
+        }
       ]
   },
   {
-      question: "Which of these racing franchises would you prefer to play a game from?",
+      question: "Do you enjoy creating new content or websites?",
       answers: [
           {
-              type: "Microsoft",
-              content: "Forza"
+              type: "SWE",
+              content: "yes"
           },
           {
-              type: "Nintendo",
-              content: "Mario Kart"
+              type: ["Cloud","Cysec"],
+              content: "no"
           },
-          {
-              type: "Sony",
-              content: "Gran Turismo"
-          }
       ]
   },
   {
-      question: "Which of these games do you think is best?",
+      question: "Are you unemployed, working part-time or working a minimum wage/low-paying job?",
       answers: [
           {
-              type: "Microsoft",
-              content: "BioShock"
+              type: ["SWE", "Cloud", "CySec"],
+              content: "yes"
           },
           {
-              type: "Nintendo",
-              content: "The Legend of Zelda: Ocarina of Time"
-          },
-          {
-              type: "Sony",
-              content: "Final Fantasy VII"
-          }
+            type: "Other",
+            content: "no"
+        }
       ]
   },
   {
-      question: "What console would you prefer to own?",
+    question: "Are you are legally authorized to work in the U.S.?",
+    answers: [
+        {
+            type: ["SWE", "Cloud", "CySec"],
+            content: "yes"
+        },
+        {
+          type: "Other",
+          content: "no"
+      }
+    ]
+},
+  {
+      question: "Do you have a high school diploma?",
       answers: [
+        {
+            type: ["SWE", "Cloud", "CySec"],
+            content: "yes"
+        },
           {
-              type: "Microsoft",
-              content: "X-Box One"
-          },
-          {
-              type: "Nintendo",
-              content: "Wii U"
-          },
-          {
-              type: "Sony",
-              content: "Playstation 4"
-          }
+            type: "Other",
+            content: "no"
+        }
       ]
   }
 ];
