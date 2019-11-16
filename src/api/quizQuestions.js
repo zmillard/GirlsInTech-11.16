@@ -1,5 +1,53 @@
 var quizQuestions = [
   {
+      question: "Are you starting your career fresh or building up?",
+      answers: [
+          {
+              type: "Other",
+              content: "Yes"
+          },
+          {
+              type: "Other",
+              content: "No"
+          }
+      ]
+  },{
+    question: "Are you unemployed, working part-time or working a minimum wage/low-paying job?",
+    answers: [
+        {
+            type: "Other",
+            content: "yes"
+        },
+        {
+          type: "Other",
+          content: "no"
+      }
+    ]
+    },{
+    question: "Are you are legally authorized to work in the U.S.?",
+    answers: [
+        {
+            type: "Other",
+            content: "yes"
+        },
+        {
+            type: "Other",
+            content: "no"
+        }
+    ]
+    },{
+        question: "Do you have a high school diploma?",
+        answers: [
+            {
+                type: ["SWE", "Cloud", "CySec"],
+                content: "yes"
+            },
+              {
+                type: "Other",
+                content: "no"
+            }
+          ]
+    },{
       question: "Have you worked with or studied any of the following languages yourself?",
       answers: [
           {
@@ -19,8 +67,7 @@ var quizQuestions = [
             content: "none"
         }
       ]
-  },
-  {
+    },{
       question: "Are you excited about creating any of the following on your own?",
       answers: [
           {
@@ -40,8 +87,7 @@ var quizQuestions = [
             content: "no"
         }
       ]
-  },
-  {
+    },{
       question: "Do you enjoy creating new content or websites?",
       answers: [
           {
@@ -49,50 +95,74 @@ var quizQuestions = [
               content: "yes"
           },
           {
-              type: ["Cloud","Cysec"],
+              type: "Cloud",
               content: "no"
           },
       ]
-  },
-  {
-      question: "Are you unemployed, working part-time or working a minimum wage/low-paying job?",
+    },{
+      question: "Are you interested in creating secure systems?",
       answers: [
+        {
+            type: ["SWE", "Cloud", "CySec"],
+            content: "yes"
+        },
           {
-              type: ["SWE", "Cloud", "CySec"],
-              content: "yes"
+              type: "CySec",
+              content: "Yes"
           },
           {
-            type: "Other",
-            content: "no"
-        }
+              type: "SWE",
+              content: "No"
+          },
+          {
+              type: "Cloud",
+              content: "Indifferent"
+          }
       ]
-  },
-  {
-    question: "Are you are legally authorized to work in the U.S.?",
+  },{
+    question: "Do you enjoy troubleshooting and finding flaws in problems?",
     answers: [
         {
-            type: ["SWE", "Cloud", "CySec"],
-            content: "yes"
+            type: "CySec",
+            content: "Yes"
         },
         {
-          type: "Other",
-          content: "no"
-      }
-    ]
-},
-  {
-      question: "Do you have a high school diploma?",
-      answers: [
-        {
-            type: ["SWE", "Cloud", "CySec"],
-            content: "yes"
+            type: "SWE",
+            content: "Indifferent"
         },
-          {
-            type: "Other",
-            content: "no"
+        {
+            type: "Cloud",
+            content: "No"
         }
-      ]
-  }
+    ]
+ },{
+    question: "Are you interested in managing data?",
+    answers: [
+        {
+            type: ["SWE", "CySec"],
+            content: "No"
+        },
+        {
+            type: "Cloud",
+            content: "Yes"
+        }
+    ]
+ },{
+    question: "Do you consider yourself as someone with good written and oral communication skills",
+    answers: [
+        {
+            type: "CySec",
+            content: "No"
+        },{
+            type: "SWE",
+            content: "Indifferent"
+        },
+        {
+            type: "Cloud",
+            content: "Yes"
+        }
+    ]
+}
 ];
 
 export default quizQuestions;
