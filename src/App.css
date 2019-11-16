@@ -5,7 +5,8 @@
 
 .App-header {
   background-color:#09507c;
-  padding: 20px;
+  height: 100px;
+  padding: 10px;
   color: white;
   text-align: center;
 }
@@ -16,4 +17,25 @@
 
 .radioCustomButton {
   background-color: #f58832;
+}
+ .row {
+justify-content: center;
+height: 100%;
+width: 100%;
+} 
+
+ .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}  
+
+.left {
+  float: left;
+  width: 50%;
+} 
+
+ .right {
+  float: right;
+  width: 50%;
 }

@@ -4,6 +4,7 @@ import Quiz from './components/Quiz';
 import Result from './components/Result';
 import logo from './svg/logo.svg';
 import './App.css';
+import logoPerScholas from './svg/logoPerScholasDark.png';
 
 class App extends Component {
   constructor(props) {
@@ -131,9 +132,13 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h1>Per Scholas Admissions Quiz</h1>
+        <div classname="row">
+        <div className="left"><img src={logoPerScholas} /></div>
+          <div className="right"><h1>Admissions Quiz</h1></div>
+        </div>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
+      
       </div>
     );
   }

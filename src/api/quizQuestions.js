@@ -3,7 +3,7 @@ var quizQuestions = [
       question: "Are you starting your career fresh or building up?",
       answers: [
           {
-              type: "Other",
+            type: ["Software Engineering", "Cloud Support", "Cyber Security"],
               content: "Yes"
           },
           {
@@ -15,107 +15,107 @@ var quizQuestions = [
     question: "Are you unemployed, working part-time or working a minimum wage/low-paying job?",
     answers: [
         {
-            type: "Other",
-            content: "yes"
+            type: ["Software Engineering", "Cloud Support", "Cyber Security"],
+            content: "Yes"
         },
         {
           type: "Other",
-          content: "no"
+          content: "No"
       }
     ]
     },{
     question: "Are you are legally authorized to work in the U.S.?",
     answers: [
         {
-            type: "Other",
-            content: "yes"
+            type: ["Software Engineering", "Cloud Support", " Cyber Security"],
+            content: "Yes"
         },
         {
             type: "Other",
-            content: "no"
+            content: "No"
         }
     ]
     },{
         question: "Do you have a high school diploma?",
         answers: [
             {
-                type: ["SWE", "Cloud", "CySec"],
-                content: "yes"
+                type: ["Software Engineering", "Cloud Support", "Cyber Security"],
+                content: "Yes"
             },
               {
                 type: "Other",
-                content: "no"
+                content: "No"
             }
           ]
     },{
       question: "Have you worked with or studied any of the following languages yourself?",
       answers: [
           {
-              type: "SWE",
+              type: "Software Engineering",
               content: "HTML or Javascript"
           },
           {
-              type: "Cloud", 
+              type: "Cloud Support", 
               content: "Bash/Linux/Unix"
           },
           {
-              type: "CySec",
+              type: "Cyber Security",
               content: "SQL"
           },
           {
             type: "Other",
-            content: "none"
+            content: "None"
         }
       ]
     },{
       question: "Are you excited about creating any of the following on your own?",
       answers: [
           {
-              type: "SWE",
-              content: "a website"
+              type: "Software Engineering",
+              content: "A Website"
           },
           {
-              type: "Cloud",
-              content: "a wifi network"
+              type: "Cloud Support",
+              content: "A WiFi network"
           },
           {
-              type: "CySec",
-              content: "a firewall"
+              type: "Cyber Security",
+              content: "A firewall"
           },
           {
             type: "Other",
-            content: "no"
+            content: "No"
         }
       ]
     },{
       question: "Do you enjoy creating new content or websites?",
       answers: [
           {
-              type: "SWE",
-              content: "yes"
+              type: "Software Engineering",
+              content: "Yes"
           },
           {
-              type: "Cloud",
-              content: "no"
+              type: "Cloud Support",
+              content: "No"
           },
+          {
+            type: "Cyber Security",
+            content: "Indifferent"
+        },
       ]
     },{
       question: "Are you interested in creating secure systems?",
       answers: [
-        {
-            type: ["SWE", "Cloud", "CySec"],
-            content: "yes"
-        },
           {
-              type: "CySec",
+              type: "Cyber Security",
               content: "Yes"
           },
           {
-              type: "SWE",
+              type: "Software Engineering",
               content: "No"
           },
           {
-              type: "Cloud",
+              type: "Cloud Support",
               content: "Indifferent"
           }
       ]
@@ -123,15 +123,15 @@ var quizQuestions = [
     question: "Do you enjoy troubleshooting and finding flaws in problems?",
     answers: [
         {
-            type: "CySec",
+            type: "Cyber Security",
             content: "Yes"
         },
         {
-            type: "SWE",
+            type: "Software Engineering",
             content: "Indifferent"
         },
         {
-            type: "Cloud",
+            type: "Cloud Support",
             content: "No"
         }
     ]
@@ -139,11 +139,11 @@ var quizQuestions = [
     question: "Are you interested in managing data?",
     answers: [
         {
-            type: ["SWE", "CySec"],
+            type: ["Software Engineering", "Cyber Security"],
             content: "No"
         },
         {
-            type: "Cloud",
+            type: "Cloud Support",
             content: "Yes"
         }
     ]
@@ -151,14 +151,14 @@ var quizQuestions = [
     question: "Do you consider yourself as someone with good written and oral communication skills",
     answers: [
         {
-            type: "CySec",
+            type: "Cyber Security",
             content: "No"
         },{
-            type: "SWE",
+            type: "Software Engineering",
             content: "Indifferent"
         },
         {
-            type: "Cloud",
+            type: "Cloud Support",
             content: "Yes"
         }
     ]
