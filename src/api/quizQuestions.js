@@ -3,11 +3,11 @@ var quizQuestions = [
       question: "Are you starting your career fresh or building up?",
       answers: [
           {
-              type: "Other",
+              type: ["CySec", "SWE", "Cloud"],
               content: "Yes"
           },
           {
-              type: "Other",
+              type: ["CySec", "SWE", "Cloud"],
               content: "No"
           }
       ]
@@ -33,26 +33,22 @@ var quizQuestions = [
     answers: [
         {
             type: "CySec",
-            content: "Indifferent"
+            content: "Yes"
         },
         {
             type: "SWE",
-            content: "No"
+            content: "Indifferent"
         },
         {
             type: "Cloud",
-            content: "Yes"
+            content: "No"
         }
     ]
  },{
     question: "Are you interested in managing data?",
     answers: [
         {
-            type: "CySec",
-            content: "Indifferent"
-        },
-        {
-            type: "SWE",
+            type: ["SWE", "CySec"],
             content: "No"
         },
         {
@@ -64,12 +60,8 @@ var quizQuestions = [
     question: "Do you consider yourself as someone with good written and oral communication skills",
     answers: [
         {
-            type: "CySec",
+            type: ["CySec", "SWE"],
             content: "No"
-        },
-        {
-            type: "SWE",
-            content: "Indifferent"
         },
         {
             type: "Cloud",
