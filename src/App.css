@@ -4,7 +4,7 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color:#09507c;
   padding: 20px;
   color: white;
   text-align: center;
@@ -12,4 +12,8 @@
 
 .App-intro {
   font-size: large;
+}
+
+.radioCustomButton {
+  background-color: #f58832;
 }
